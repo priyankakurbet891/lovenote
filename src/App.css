@@ -1,0 +1,104 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fff4e6;
+  color: #3a3a3a;
+}
+
+/* Letter section */
+.letter {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.letter-heading {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.letter-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #5f6368;
+  margin-bottom: 20px;
+}
+
+.letter-signature {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff69b4;
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* Timer section */
+.timer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.timer-heading {
+  font-size: 2rem;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.timer-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6347;
+  animation: surpriseEffect 1s ease-in-out infinite;
+}
+
+.timer-count span {
+  color: #ff69b4;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animation for surprise effect (for timer) */
+@keyframes surpriseEffect {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    color: #ff1493;
+  }
+}
+
+/* Toy animation (optional) */
+.toy {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.toy img {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
